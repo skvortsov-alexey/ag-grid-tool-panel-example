@@ -6,3 +6,9 @@
   width: 16px;
   display: inline-block;
 }
+
+.ag-react-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}

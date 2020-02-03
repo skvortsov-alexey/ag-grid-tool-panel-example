@@ -3,7 +3,9 @@ import { AgGridReact } from "@ag-grid-community/react";
 import { AllModules } from "@ag-grid-enterprise/all-modules";
 import "@ag-grid-community/all-modules/dist/styles/ag-grid.css";
 import "@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
+
 import CustomStatsToolPanel from "./CustomStatsToolPanel";
+import AccordionExampleToolPanel from './AccordionExampleToolPanel';
 
 interface GridExampleState {
   modules?: any,
@@ -92,11 +94,21 @@ class GridExample extends Component<{}, GridExampleState> {
             labelKey: "customStats",
             iconKey: "custom-stats",
             toolPanel: "customStatsToolPanel"
+          },
+          {
+            id: "accordionExample",
+            labelDefault: "Accordion Example",
+            labelKey: "accordionExample",
+            iconKey: "accordion-example",
+            toolPanel: "accordionExampleToolPanel"            
           }
         ],
         defaultToolPanel: "customStats"
       },
-      frameworkComponents: { customStatsToolPanel: CustomStatsToolPanel },
+      frameworkComponents: { 
+        customStatsToolPanel: CustomStatsToolPanel,
+        accordionExampleToolPanel: AccordionExampleToolPanel
+      },
       rowData: []
     };
   }
