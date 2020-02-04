@@ -1,11 +1,9 @@
-import React from 'react';
-import CollapsibleGroup from './CollapsibleGroup';
-import './styles.css';
+import React from "react";
+import CollapsibleGroup from "./CollapsibleGroup";
+import "./styles.css";
 
 function AccordionExampleToolPanel() {
-	return(
-		<CollapsibleGroup />
-	)
+  return <CollapsibleGroup />;
 }
 
-export default AccordionExampleToolPanel
+export default AccordionExampleToolPanel;

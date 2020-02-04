@@ -5,17 +5,17 @@ import "@ag-grid-community/all-modules/dist/styles/ag-grid.css";
 import "@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
 
 import CustomStatsToolPanel from "./CustomStatsToolPanel";
-import AccordionExampleToolPanel from './AccordionExampleToolPanel';
+import AccordionExampleToolPanel from "./AccordionExampleToolPanel";
 
 interface GridExampleState {
-  modules?: any,
-  columnDefs?: any,
-  defaultColDef?: any,
-  icons?: any,
-  sideBar?: any,
-  frameworkComponents?: any,
-  onGridReady?: any,
-  rowData?: any
+  modules?: any;
+  columnDefs?: any;
+  defaultColDef?: any;
+  icons?: any;
+  sideBar?: any;
+  frameworkComponents?: any;
+  onGridReady?: any;
+  rowData?: any;
 }
 
 class GridExample extends Component<{}, GridExampleState> {
@@ -71,7 +71,9 @@ class GridExample extends Component<{}, GridExampleState> {
         }
       ],
       defaultColDef: { filter: true },
-      icons: { "custom-stats": '<span class="ag-icon ag-icon-custom-stats"></span>' },
+      icons: {
+        "custom-stats": '<span class="ag-icon ag-icon-custom-stats"></span>'
+      },
       sideBar: {
         toolPanels: [
           {
@@ -100,12 +102,12 @@ class GridExample extends Component<{}, GridExampleState> {
             labelDefault: "Accordion Example",
             labelKey: "accordionExample",
             iconKey: "accordion-example",
-            toolPanel: "accordionExampleToolPanel"            
+            toolPanel: "accordionExampleToolPanel"
           }
         ],
         defaultToolPanel: "customStats"
       },
-      frameworkComponents: { 
+      frameworkComponents: {
         customStatsToolPanel: CustomStatsToolPanel,
         accordionExampleToolPanel: AccordionExampleToolPanel
       },
