@@ -15,7 +15,6 @@ class CollapsibleGroupItem extends Component<
 > {
   constructor(props: CollapsibleGroupItemProps) {
     super(props);
-    const a = 3;
     this.state = { isCollapsed: true };
   }
 
